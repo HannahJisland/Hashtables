@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class HashTable<K,V> {
-    // Nod (för seperate chaining)
+    // Nod för seperate chaining
     private class Node {
         K key;
         V value;
@@ -18,7 +18,7 @@ public class HashTable<K,V> {
     private int size; // antal element
 
     public HashTable() {
-        table = ((Node[]) new HashTable.Node[10]);
+        table = ((Node[]) new HashTable.Node[4]);
 
         size = 0;
     }
